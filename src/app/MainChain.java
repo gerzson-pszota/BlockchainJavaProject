@@ -1,4 +1,8 @@
+package app;
+
 import java.util.ArrayList;
+
+import chain.Block;
 import com.google.gson.GsonBuilder;
 
 public class MainChain {

@@ -1,3 +1,5 @@
+package chain;
+
 import java.util.Date;
 
 public class Block {
@@ -29,6 +31,6 @@ public class Block {
       nonce++;
       hash = calculateHash();
     }
-    System.out.println("Block mined!!! : " + hash);
+    System.out.println("chain.Block mined!!! : " + hash);
   }
 }
