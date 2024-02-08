@@ -6,6 +6,4 @@ My blockchain:
 
 Transactions, Signatures and Wallets are coming soon!
 
-
-
-![BlockChainJavaProject](https://github.com/gerzson-pszota/BlockchainJavaProject/assets/138587246/1f4b759f-0abc-4dee-9d28-fcdd3c9abf6c)
+![BlockChainJavaProject](https://github.com/gerzson-pszota/BlockchainJavaProject/assets/138587246/3d155825-3d4a-449c-bf4e-5c7c173f7e15)
