@@ -43,9 +43,13 @@ public class WebServer {
   private static String generateResponse() {
     StringBuilder htmlBuilder = new StringBuilder();
     htmlBuilder.append("<html><body><h1>Blockchain</h1>");
-    htmlBuilder.append("<p>Mining difficulty is set to <strong>" + difficulty + "</strong> for quick testing. </p>");
+    htmlBuilder.append(
+        "<p>Mining difficulty is set to <strong>"
+            + difficulty
+            + "</strong> for quick testing. </p>");
 
-    htmlBuilder.append("<p>(At the time of coding, Litecoins difficulty is around 32.67 Million)</p>");
+    htmlBuilder.append(
+        "<p>(At the time of coding, Litecoins difficulty is around 32.67 Million)</p>");
 
     // add Run Code button
     htmlBuilder.append("<form action=\"/runcode\" method=\"post\">");
