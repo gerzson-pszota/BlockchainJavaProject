@@ -26,6 +26,24 @@ public class Transaction {
     this.inputs = inputs;
   }
 
+  // signs all the data we don't wish to be tampered with.
+  public void generateSignature(PrivateKey privateKey) {
+    String data =
+        StringUtil.getStringFromKey(sender)
+            + StringUtil.getStringFromKey(reciepient)
+            + Float.toString(value);
+    signature = StringUtil.applyECDSASig(privateKey, data);
+  }
+
+  // verifies the data we signed hasn't been tampered with
+  public boolean verifiySignature() {
+    String data =
+        StringUtil.getStringFromKey(sender)
+            + StringUtil.getStringFromKey(reciepient)
+            + Float.toString(value);
+    return StringUtil.verifyECDSASig(sender, data, signature);
+  }
+
   // this calculates the transaction hash (which will be used as its Id)
   private String calculateHash() {
     sequence++;
