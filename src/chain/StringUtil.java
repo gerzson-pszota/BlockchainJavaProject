@@ -1,6 +1,7 @@
 package chain;
 
 import java.security.MessageDigest;
+import java.security.PublicKey;
 
 public class StringUtil {
   // Applies Sha256 (cryptographic algorithm) to a string and returns the result
@@ -18,5 +19,8 @@ public class StringUtil {
     } catch (Exception e) {
       throw new RuntimeException(e);
     }
+  }
+
+  public static String getStringFromKey(PublicKey sender) {
   }
 }
